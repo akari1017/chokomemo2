@@ -4,5 +4,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :tweets
+  has_many :likes
+
+  def liked_by?(tweet_id)
+    likes.where(tweet_id: tweet_id).exists?
+  end
+
   validates :nickname, presence: true
 end
