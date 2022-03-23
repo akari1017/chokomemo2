@@ -1,0 +1,12 @@
+<div class="contents row">
+  <div class="container">
+    <%= form_with(model: @tweet, local: true) do |form| %>
+      <%= form.file_field :image, placeholder: "Image Url" %>
+      今日の日記
+      <%= form.text_area :diary, placeholder: "例：今日○○を食べて、通勤時に電車2駅分歩いた。", rows: "10" %>
+      今日の体重
+      <%= form.text_field :weight %>kg
+      <%= form.submit "投稿する" %>
+    <% end %>
+  </div>
+</div>

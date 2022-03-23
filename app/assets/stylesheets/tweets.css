@@ -1,0 +1,153 @@
+.wrapper {
+  display: flex;
+}
+
+
+/* サイドバーの設定 */
+.side-bar {
+  background-color: #ccf1cf;
+  width: 300px;
+  padding: 40px 40px 0;
+  text-align: center;
+}
+
+
+/* 投稿一覧の設定 */
+.page {
+  width: calc(100vw - 300px);
+  background-image: url('white.png');
+  background-size: 80%;
+}
+
+
+
+
+/* サイドバーの要素の設定 */
+.name-text {
+  font-size: 1.0em;
+  color: rgb(163, 163, 163);
+}
+
+.name {
+  font-size: 1.3em;
+}
+
+.post-type {
+  position: relative;
+  border: solid;
+  border-radius: 4px; 
+  padding: 8px 50px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+/* 投稿一覧の要素の設定 */
+.item-contents {
+  display: flex;
+	flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5vh 0 0;
+  text-align: center;
+  background-color: #d6c6ae65;
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  font-size: 4vh;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #d6c6ae;
+  padding: 0.5em;
+  height: 9vh;
+  width: 35%;
+  box-sizing: border-box;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: -2vh 0vh 4vh 55vh;
+}
+
+.title::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 50vh;
+  border: 15px solid transparent;
+  border-top: 15px solid #d6c6ae;
+  width: 0;
+  height: 0;
+}
+
+
+.item-lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff8a;
+}
+
+.item-lists>.list {
+  width: 95%;
+  padding: 2vw;
+}
+
+
+.article figure {
+	float: left; 
+}
+
+.item-img {
+  border-radius: 30px; 
+  float: left; 
+  width:  230px;
+  height: 200px;
+  border: 8px solid #5321003f;
+  padding: 4px;
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.item-info {
+  display: inline-block;
+  float: right; 
+  margin-right: 10vh;
+  height: 25vh;
+	width: 65%;
+  color: black;
+  border: 4px solid rgba(117, 63, 0, 0.438);;
+  border-radius: 30px;
+  padding: 2vh;
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 2.5vh;
+}
+
+.item-name {
+  font-size: 2vh;
+}
+
+.tweet-user {
+  display: flex;
+  font-size: 3.5vh;
+  width: 20vh;
+  height: 7vh;
+  margin: -2vh 0 1vh 45vh;
+  padding: 0.3em;
+  color: #494949;
+  background: linear-gradient(transparent 75%, #a7d6ff 70%);
+}
+
+.tweet-time {
+  margin: -3vh 0 1vh 115vh;
+  font-size: 2vh;
+  color: #494949a1;
+}

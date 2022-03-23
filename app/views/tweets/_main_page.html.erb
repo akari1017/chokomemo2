@@ -1,0 +1,30 @@
+<div class="tweets">
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+  <div class='item-contents'>
+    <h2 class='title'>みんなの投稿</h2>
+    <ul class='item-lists'>
+      <% @tweets.each do |tweet| %>
+        <article class='list'>
+          <%= link_to "#" do %>
+            <div class='item-img-content'>
+              <figure>
+                <%= image_tag tweet.image, class: 'item-img'%>
+              </figure>
+              <div class='tweet-user'>
+                <%= tweet.user.nickname %>
+              </div>
+              <div class='tweet-time'>
+                <%= tweet.created_at.strftime('%Y/%m/%d') %>
+              </div>
+              <div class='item-info'>
+                <%= tweet.diary %>
+              </div>
+            </div>
+          <% end %>
+        </article>
+      <% end %>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="rooms">
+  <h1 class='name-text'>
+      こんにちは
+      <%= link_to current_user.nickname, edit_user_path(current_user), class: "name" %>
+      さん
+  </h1>
+    <%= link_to "投稿する", new_tweet_path, class: "post-type" %>
+</div>
