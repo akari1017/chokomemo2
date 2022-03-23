@@ -53,7 +53,7 @@
   flex-direction: column;
   padding: 5vh 0 0;
   text-align: center;
-  background-color: #d6c6ae65;
+  background-color: #d4c0ad65;
 }
 
 .title {
@@ -71,14 +71,14 @@
   box-sizing: border-box;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  margin: -2vh 0vh 4vh 55vh;
+  margin: -2vh 0vh 4vh 40vh;
 }
 
 .title::after {
   position: absolute;
   content: '';
   top: 100%;
-  left: 50vh;
+  left: 35vh;
   border: 15px solid transparent;
   border-top: 15px solid #d6c6ae;
   width: 0;
@@ -108,10 +108,11 @@
 .item-img {
   border-radius: 30px; 
   float: left; 
-  width:  230px;
-  height: 200px;
-  border: 8px solid #5321003f;
-  padding: 4px;
+  margin-left: -2vh;
+  width:  240px;
+  height: 210px;
+  border: 7px solid #5321003f;
+  padding: 3px;
   display: inline-block;
   background-color: #ffffff;
 }
@@ -119,16 +120,16 @@
 .item-info {
   display: inline-block;
   float: right; 
-  margin-right: 10vh;
-  height: 25vh;
-	width: 65%;
+  margin-right: 3vh;
+  height: 24vh;
+	width: 66%;
   color: black;
   border: 4px solid rgba(117, 63, 0, 0.438);;
   border-radius: 30px;
   padding: 2vh;
   background-color: #ffffff;
   text-align: left;
-  font-size: 2.5vh;
+  font-size: 2.2vh;
 }
 
 .item-name {
@@ -137,17 +138,29 @@
 
 .tweet-user {
   display: flex;
-  font-size: 3.5vh;
-  width: 20vh;
-  height: 7vh;
-  margin: -2vh 0 1vh 45vh;
-  padding: 0.3em;
+  font-size: 2.5vh;
+  width: 18vh;
+  height: 4.5vh;
+  margin: -2vh 0 1vh 35vh;
+  padding: 0.2em;
   color: #494949;
   background: linear-gradient(transparent 75%, #a7d6ff 70%);
 }
 
 .tweet-time {
-  margin: -3vh 0 1vh 115vh;
+  margin: -4vh 0 0.5vh 82vh;
   font-size: 2vh;
   color: #494949a1;
 }
+
+.like-btn {
+  font-size: 17px;
+  color: #808080;
+  margin: 0 0 0 70vh;
+ }
+ 
+ .unlike-btn {
+  font-size: 17px;
+  color: #e54747;
+  margin: 0 0 0 70vh;
+ }

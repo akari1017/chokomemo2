@@ -21,6 +21,9 @@
               <div class='item-info'>
                 <%= tweet.diary %>
               </div>
+              <div id="likes_buttons_<%= tweet.id %>">
+                <%= render partial: 'likes/like', locals: {tweet: tweet} %>
+              </div>
             </div>
           <% end %>
         </article>
