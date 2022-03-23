@@ -120,9 +120,9 @@
 .item-info {
   display: inline-block;
   float: right; 
-  margin-right: 9vh;
+  margin-right: 3vh;
   height: 24vh;
-	width: 63%;
+	width: 66%;
   color: black;
   border: 4px solid rgba(117, 63, 0, 0.438);;
   border-radius: 30px;
@@ -152,3 +152,15 @@
   font-size: 2vh;
   color: #494949a1;
 }
+
+.like-btn {
+  font-size: 17px;
+  color: #808080;
+  margin: 0 0 0 70vh;
+ }
+ 
+ .unlike-btn {
+  font-size: 17px;
+  color: #e54747;
+  margin: 0 0 0 70vh;
+ }
