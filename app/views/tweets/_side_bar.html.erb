@@ -4,5 +4,22 @@
       <%= link_to current_user.nickname, edit_user_path(current_user), class: "name" %>
       さん
   </h1>
-    <%= link_to "投稿する", new_tweet_path, class: "post-type" %>
+  <% if @tweet <= current_user.body %>
+    <%= image_tag "cake3.png", class:"cake3" %>
+    <% elsif @tweet <= current_user.body + 5 %>
+    <%= image_tag "cake2.png", class:"cake2" %>
+    <% else %>
+    <%= image_tag "cake1.png", class:"cake1" %>
+  <% end %>
+  <h1 class='goal-text'>
+      目標の体重
+      <%= current_user.body %>
+      kg
+  </h1>
+  <h1 class='goal-text'>
+      現在の体重
+      <%= @tweet %>
+      kg
+  </h1>
+      <%= link_to "投稿する", new_tweet_path, class: "post-type" %>
 </div>
