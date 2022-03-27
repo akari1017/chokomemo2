@@ -1,0 +1,42 @@
+<div class="my-page">
+<div class="my-page-title">
+Mypage
+</div>
+<div class="back">
+<div class="graph-title">
+  これまでの体重
+  </div>
+  </div>
+  <div class="graph">
+    <%= line_chart @tweets.group_by_day(:created_at, format:"%m/%d", series: false).sum(:weight),
+    height: "400px",
+    min: 30,
+    max: 80, 
+    curve: false %>
+  </div>
+  </div>
+  <div class="back">
+<div class="graph-title">
+  いままでの投稿
+  </div>
+  </div>
+  <ul class='item-lists'>
+
+    <% @tweets.each do |tweet| %>
+      <li class='list'>
+        <%= link_to '#' do %>
+        <div class='item-img-content'>
+          <div class='user-tweet-time'>
+                <%= tweet.created_at.strftime('%Y/%m/%d') %>
+              </div>
+          <%= image_tag tweet.image, class: "user-item-img" %>
+          <div class='user-item-info'>
+                <%= tweet.diary %>
+              </div>
+          </div>
+          <%end%>
+          </li>
+          <%end%>
+          </ul>
+
+</div>
